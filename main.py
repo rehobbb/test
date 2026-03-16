@@ -1,4 +1,4 @@
-choice = input("Please enter 2, 3, 4 or 5: ").strip()
+choice = input("Please enter 2, 3, 4, 5 or 6: ").strip()
 
 if choice == "2":
     x = float(input("Enter x: "))
@@ -25,5 +25,12 @@ elif choice == "5":
     d = float(input("Enter the 4th number: "))
     result = a * b * c * d
     print("Result:", result)
+elif choice == "6":
+    a = float(input("Enter the 1st number: "))
+    b = float(input("Enter the 2nd number: "))
+    c = float(input("Enter the 3rd number: "))
+    d = float(input("Enter the 4th number: "))
+    result = max(a, b, c, d)
+    print("Result:", result)
 else:
-    print("Invalid input. Please enter 2, 3, 4 or 5.")
+    print("Invalid input. Please enter 2, 3, 4, 5 or 6.")
